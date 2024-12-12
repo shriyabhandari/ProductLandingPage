@@ -1,0 +1,141 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 340px; 
+  }
+
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-image {
+    max-width: 100%;
+    height: 170px; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+  }
+
+  .product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .product-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d9230f;
+    margin-bottom: 10px;
+  }
+
+  .product-rating {
+    color: #f1c40f;
+    font-size: 14px;
+  }
+  .badge {
+    display: block;
+    background: black;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    margin: 0;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.limited-edition {
+    background: #ff0000;
+    margin-top: 2px; 
+}
+
+.badge-container {
+    display: block;
+    text-align: center; 
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-link:hover .product-card {
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+<div class="product-grid">
+    <a href="./productdesc.html" class="product-link">
+      <div class="product-card">
+        <img src="./images/Cream Lip Stain Liquid Lipstick - SEPHORA COLLECTION _ Sephora (2).jpg" alt="Product" class="product-image">
+        <div class="product-title">SEPHORA COLLECTION Cream Lip Stain 10HR Liquid Lipstick</div>
+        <div class="product-price">$16.00</div>
+        <div class="product-rating">&#9733;&#9733;&#9733;&#9733;&#9734; (603)</div>
+      </div>
+    </a>
+
+    <a href="./productdesc.html" class="product-link">
+      <div class="product-card">
+        <img src="./images/Cream Lip Stain Liquid Lipstick - SEPHORA COLLECTION _ Sephora (1).jpg" alt="Product" class="product-image">
+        <div class="product-title">SEPHORA COLLECTION Retractable Rouge Gel Lip Liner</div>
+        <div class="product-price">$13.00</div>
+        <div class="product-rating">&#9733;&#9733;&#9733;&#9733;&#9734; (1.6K)</div>
+      </div>
+    </a>
+
+    <a href="./productdesc.html" class="product-link">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product" class="product-image">
+        <div class="product-title">SEPHORA COLLECTION Soft Matte & Easy Liquid Lipstick</div>
+        <div class="product-price">$16.00</div>
+        <div class="product-rating">&#9733;&#9733;&#9733;&#9734;&#9734; (431)</div>
+      </div>
+    </a>
+
+    <a href="./productdesc.html" class="product-link">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product" class="product-image">
+        <div class="product-title">SEPHORA COLLECTION Outrageous Plump Hydrating Lip Gloss</div>
+        <div class="product-price">$14.00</div>
+        <div class="product-rating">&#9733;&#9733;&#9733;&#9733;&#9734; (1.6K)</div>
+      </div>
+    </a>
+
+    <a href="./productdesc.html" class="product-link">
+      <div class="product-card">
+        
+        
+        <img src="https://via.placeholder.com/150" alt="Product" class="product-image">
+        <div class="product-title">SEPHORA COLLECTION Cream Lip Stain Liquid Lipstick Set</div>
+        <div class="product-price">$25.00 <span style="text-decoration:line-through;color:#888;">$38.00</span></div>
+        <div class="product-rating">&#9733;&#9733;&#9734;&#9734;&#9734; (11)</div>
+      </div>
+    </a>
+
+    <a href="./productdesc.html" class="product-link">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product" class="product-image">
+        <div class="product-title">SEPHORA COLLECTION Waterproof 12HR Retractable Eyeliner</div>
+        <div class="product-price">$14.00</div>
+        <div class="product-rating">&#9733;&#9733;&#9733;&#9733;&#9733; (7.3K)</div>
+      </div>
+    </a>
+  </div>
